@@ -38,7 +38,7 @@ object Day2:
 
   case class Game(id: Int, details: List[GameDetails])
 
-  def readInput(): Iterator[Game] = Source.fromResource("day2.txt")
+  def readInput(): Iterator[Game] = Source.fromResource("input/day2.txt")
     .getLines()
     .map(readLine)
 

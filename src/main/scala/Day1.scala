@@ -2,13 +2,13 @@ import scala.io.Source
 
 object Day1:
   def part1(): Int =
-    Source.fromResource("day1.txt")
+    Source.fromResource("input/day1.txt")
       .getLines()
       .map(readNumbers)
       .sum
 
   def part2(): Int = Source
-    .fromResource("day1.txt")
+    .fromResource("input/day1.txt")
     .getLines()
     .map(readNumbersComplex)
     .map(getFirstAndLat)
