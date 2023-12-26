@@ -11,7 +11,7 @@ object Day3:
   def part1(value: String = "input/day3.txt"): Int =
     val mainMap = Parser.readInput(value)
     getNumbers(mainMap)
-      .filter(number => isPart(mainMap.toMatrix(), number))
+      .filter(number => isPart(mainMap.toMatrix, number))
       .map(_.value)
       .sum
 
