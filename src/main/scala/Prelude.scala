@@ -15,6 +15,8 @@ extension(number: Int)
   
 extension (n: BigInt)
   def between(l: BigInt, r: BigInt): Boolean = n >= l && n <= r
+  def toBigDecimal: BigDecimal = BigDecimal(n)
   
 extension[A](list: List[A])
   def safeTail: List[A] = if list.isEmpty then List() else list.tail
+
